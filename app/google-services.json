@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1018973539192",
+    "firebase_url": "https://fir-auladdm.firebaseio.com",
+    "project_id": "fir-auladdm",
+    "storage_bucket": "fir-auladdm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018973539192:android:9c240f010b22a34080968d",
+        "android_client_info": {
+          "package_name": "br.ifsc.edu.firebaseauladdm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018973539192-hf12lt0pe6f1sl5819ikb5qato9d4nak.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.ifsc.edu.firebaseauladdm",
+            "certificate_hash": "bec76724069a30dd491ec36d7ee0be808b79c941"
+          }
+        },
+        {
+          "client_id": "1018973539192-e3lugbnsojvigdj5tg383te5pqf9ntg6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjdMibFjJcpIbKQ93ZakD2_fCYrFAcgo8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018973539192-e3lugbnsojvigdj5tg383te5pqf9ntg6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
