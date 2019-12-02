@@ -10,8 +10,20 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="11dp"
+        android:onClick="logOut"
         android:text="LogOut"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="282dp"
-        android:onClick="logOut"/>
+        app:layout_constraintBottom_toTopOf="@+id/cadastrarUsuarioBtn"
+        app:layout_constraintEnd_toEndOf="@+id/cadastrarUsuarioBtn" />
+
+    <Button
+        android:id="@+id/cadastrarUsuarioBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Usuário"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

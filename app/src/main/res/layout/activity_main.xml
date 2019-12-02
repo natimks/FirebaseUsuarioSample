@@ -31,7 +31,7 @@
                 android:layout_gravity="center"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="E-mail" />
+                android:hint="E-mail" />
 
             <EditText
                 android:id="@+id/senha"
@@ -40,11 +40,11 @@
                 android:layout_gravity="center"
                 android:ems="10"
                 android:inputType="textPassword"
-                android:text="Senha" />
+                android:hint="Senha" />
 
             <Button
                 android:id="@+id/entrarBt"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:onClick="autenticar"
@@ -52,11 +52,18 @@
 
             <Button
                 android:id="@+id/cadastrarBt"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Cadastrar"
                 android:onClick="cadastrar"/>
+
+            <Button
+                android:id="@+id/recuperarSenhaBt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recuperar senha"
+                android:onClick="resetarSenha"/>
         </LinearLayout>
 
     </LinearLayout>

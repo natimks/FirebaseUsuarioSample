@@ -38,20 +38,11 @@ public class MainActivity extends AppCompatActivity {
         firebaseDatabase = firebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference();
 
-//        Pessoa p = new Pessoa("Odair da Silva", "000.000.000-00", "m");
-//
-//        databaseReference.child("pessoas").push().setValue(p);
-//
-//        p = new Pessoa("Natalia Maria", "000.000.000-00", "f");
-//        databaseReference.child("pessoas").push().setValue(p);
-//
-//        p = new Pessoa("Isabela Samira", "000.000.171-00", "f");
-//        databaseReference.child("pessoas").push().setValue(p);
+
         databaseReference.child("pessoas").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Pessoa p = dataSnapshot.getValue(Pessoa.class);
-                Log.d("DatabasePessoa", p.nome);
+
             }
 
             @Override
@@ -82,7 +73,8 @@ public class MainActivity extends AppCompatActivity {
                 //podemos verificar aqui se o cadastro foi concluido com sucessso
                 if (task.isSuccessful()) {
                     Toast.makeText(getApplicationContext(), "Logado com sucesso!", Toast.LENGTH_LONG).show();
-                    Intent i = new Intent();
+                    Intent i = new Intent(getApplicationContext(), ActivityPrincipal.class);
+                    startActivity(i);
 
                 } else {
                     Toast.makeText(getApplicationContext(), "Erro ao efetuar login!", Toast.LENGTH_LONG).show();
@@ -111,5 +103,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void resetarSenha(View view) {
+        EditText loginEd = findViewById(R.id.email);
+        if (!loginEd.getText().toString().isEmpty()) {
+            mAuth.sendPasswordResetEmail(loginEd.getText().toString());
+        }
     }
 }
