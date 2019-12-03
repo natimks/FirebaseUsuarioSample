@@ -1,13 +1,20 @@
 package br.ifsc.edu.firebaseauladdm;
 
 public class Pessoa {
-    int id;
+    String id;
     String nome;
     String cpf;
     String sexo;
 
-    public Pessoa(){
+    public Pessoa() {
 
+    }
+
+    public Pessoa(String id, String nome, String cpf, String sexo) {
+        this.id = id;
+        this.nome = nome;
+        this.cpf = cpf;
+        this.sexo = sexo;
     }
 
     public Pessoa(String nome, String cpf, String sexo) {
@@ -16,11 +23,11 @@ public class Pessoa {
         this.sexo = sexo;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

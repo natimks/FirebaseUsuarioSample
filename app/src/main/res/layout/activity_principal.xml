@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ActivityPrincipal">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="11dp"
-        android:onClick="logOut"
-        android:text="LogOut"
-        app:layout_constraintBottom_toTopOf="@+id/cadastrarUsuarioBtn"
-        app:layout_constraintEnd_toEndOf="@+id/cadastrarUsuarioBtn" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="168dp">
 
-    <Button
-        android:id="@+id/cadastrarUsuarioBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cadastrar Usuário"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="602dp"></androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="logOut"
+            android:text="LogOut" />
+
+        <Button
+            android:id="@+id/cadastrarUsuarioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar Usuário" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
